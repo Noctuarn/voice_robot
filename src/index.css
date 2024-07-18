@@ -1,10 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,900);
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Inter";
 }
 
 body{
@@ -12,7 +13,6 @@ body{
   flex-direction: column;
   overflow: hidden;
   font-weight: 400;
-
 }
 
 .container{

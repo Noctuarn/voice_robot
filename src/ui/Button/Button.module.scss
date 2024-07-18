@@ -1,0 +1,29 @@
+@import "../../styles/_variables";
+
+.btn {
+  border-radius: 20px;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    filter: brightness(95%);
+  }
+
+  &-primary {
+    background-color: $primary;
+    color: white;
+  }
+  &-secondary {
+    background-color: $secondary;
+    color: white;
+  }
+  &-muted {
+    background-color: $muted;
+    color: $blue;
+  }
+  &-icon {
+    background-color: transparent;
+  }
+}

@@ -1,5 +1,79 @@
 @import "../../styles/variables";
 
-header{
+header {
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left_side {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 30px;
+    cursor: pointer;
+    margin: 17px 0;
+
+    h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
     
+    @media (max-width:1000px){
+      display: none;
+    }
+  }
+
+  li {
+    font-size: 1rem;
+    color: $gray;
+    cursor: pointer;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        content: '';
+        width: 0;
+        transition: all .4s;
+        height: 2px;
+        background-color: $gray;
+    }
+    &:hover::after {
+        width: 100%;
+      }
+  }
+
+  .right_side{
+    display: flex;
+    gap: 6px;
+    margin: 10px 0;
+
+    @media (max-width:1000px){
+      display: none;
+    }
+  }
+
+  .burger{
+    display: none;
+
+    @media (max-width:1000px){
+      display: block;
+    }
+  }
 }
