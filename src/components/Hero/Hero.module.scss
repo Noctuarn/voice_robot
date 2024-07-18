@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.hero{
+    margin-top: 54px;
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:1015px){
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    .left_side{
+        display: flex;
+        flex-direction: column;
+        margin-top: 39px;
+        max-width: 494px;
+
+        @media (max-width:1015px){
+            margin-top: 0px;
+            max-width: 90%;
+        }
+
+        &>span{
+            background: $muted;
+            color: $blue;
+            width: fit-content;
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+        }
+
+        h1{
+            font-size: 56px;
+            font-weight: 600;
+            margin-bottom: 23px;
+
+            @media (max-width:600px){
+                font-size: 2rem;
+            }
+
+            span{
+                color: $blue;   
+            }
+        }
+
+        p{
+            color: $gray;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 42px;
+        }
+    }
+
+    .right_side{
+        height: 100%;
+    }
+}

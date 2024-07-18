@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.background{
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    background: $gradient_blue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:1210px){
+        width: 500px;
+        height: 500px;
+        margin-top: 60px;
+    }
+
+    @media (max-width:600px){
+        width: 400px;
+        height: 400px;
+    }
+
+    .robot_img{
+        width: 500px;
+        height: 545px;
+
+        @media (max-width:600px){
+            width: 342px;
+            height: 300px;
+        }
+    }
+
+    .shadow{
+        width: 300px;
+        height: 42px;
+        background-color: #292929;
+        opacity: .29;
+        border-radius: 50%;
+        filter: blur(10px);
+        transition: opacity 0.4s ease;
+
+        @media (max-width:600px){
+            width: 150px;
+            height: 30px;
+        }
+    }
+
+    .image1{
+        position: absolute;
+        right: 30px;
+        top: 40%;
+    }
+
+    .image2{
+        position: absolute;
+        left: -5px;
+        top: -20px;
+    }
+}
+
