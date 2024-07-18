@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .hero{
-    margin-top: 54px;
+    margin: 54px 0px 47px;
 
     .content{
         display: flex;
@@ -26,17 +26,9 @@
             max-width: 90%;
         }
 
-        &>span{
-            background: $muted;
-            color: $blue;
-            width: fit-content;
-            padding: 8px 16px;
-            border-radius: 8px;
-            margin-bottom: 18px;
-        }
-
         h1{
             font-size: 56px;
+            margin-top: 18px;
             font-weight: 600;
             margin-bottom: 23px;
 

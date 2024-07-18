@@ -23,7 +23,7 @@ const Button = ({ cn, variant, children, padding, fontSize, ...rest }: IButtonPr
     styles.btn
   );
 
-  return <button style={{padding, fontSize}} className={buttonClass}>{children}</button>;
+  return <button  style={{padding, fontSize}} className={buttonClass} {...rest}>{children}</button>;
 };
 
 export default Button;

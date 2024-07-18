@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.badge{
+    background: $muted;
+    color: $blue;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
